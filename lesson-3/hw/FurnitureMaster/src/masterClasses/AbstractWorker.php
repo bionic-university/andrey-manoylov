@@ -1,12 +1,8 @@
 <?php
+
 /**
  * Created by Manoylov.
  */
-
-namespace hw\FurnitureMaster;
-
-use hw\FurnitureMaster\Interfaces\ReportInterface;
-
 abstract class AbstractWorker implements ReportInterface
 {
     /**

@@ -1,13 +1,8 @@
 <?php
+
 /**
  * Created by Manoylov.
  */
-
-namespace hw\FurnitureMaster;
-
-
-use hw\FurnitureMaster\Interfaces\BrokenInterface;
-
 abstract class AbstractFurniture implements BrokenInterface
 {
     /**
@@ -24,6 +19,14 @@ abstract class AbstractFurniture implements BrokenInterface
      * @var boolean
      */
     private $isBroken;
+
+    /**
+     * @param $isBroken
+     */
+    function __construct($isBroken)
+    {
+        $this->isBroken = (bool)$isBroken;
+    }
 
     /**
      * @return boolean
