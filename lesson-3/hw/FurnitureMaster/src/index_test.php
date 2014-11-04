@@ -10,7 +10,7 @@ require_once 'masterClasses\FurnitureMaster.php';
 //    require_once 'src/' . $class . '.php';
 //});
 
-$furniture1 = new Chair(true);
+$furniture1 = new Chair('chair', true);
 $someMaster = new FurnitureMaster('Tom');
 $someMaster->setAvailableFurniture($furniture1);
 $someMaster->repair();

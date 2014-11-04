@@ -21,10 +21,12 @@ abstract class AbstractFurniture implements BrokenInterface
     private $isBroken;
 
     /**
+     * @param $name
      * @param $isBroken
      */
-    function __construct($isBroken)
+    function __construct($name, $isBroken)
     {
+        $this->setName($isBroken);
         $this->isBroken = (bool)$isBroken;
     }
 
